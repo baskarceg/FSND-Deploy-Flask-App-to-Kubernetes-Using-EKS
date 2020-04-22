@@ -43,6 +43,7 @@ def require_jwt(function):
     """
     @functools.wraps(function)
     def decorated_function(*args, **kws):
+        #sadkaskjdkaj
         if not 'Authorization' in request.headers:
             abort(401)
         data = request.headers['Authorization']
